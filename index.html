@@ -260,6 +260,14 @@
   .proj-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
   .proj-tag { font-size: 11px; background: var(--tag-bg); color: var(--mid); padding: 3px 9px; border-radius: 4px; transition: background 0.2s, color 0.4s ease;}
   .proj-card:hover .proj-tag { background: var(--rule); }
+
+  /* PROJECT IMAGE GALLERY */
+  .proj-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+  .proj-shot { position: relative; aspect-ratio: 16/10; border-radius: 8px; overflow: hidden; background: var(--off); border: 1px solid var(--rule); }
+  .proj-shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .proj-shot-label { position: absolute; top: 6px; left: 6px; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: rgba(0,0,0,0.65); color: #fff; padding: 3px 8px; border-radius: 4px; }
+  .proj-shot-placeholder { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 4px; height: 100%; color: var(--lite); font-size: 10px; text-align: center; padding: 8px; }
+  .proj-shot-placeholder svg { opacity: 0.4; }
   
   .proj-links { display: flex; gap: 12px; }
   .proj-link { font-size: 12px; font-weight: 500; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 4px; transition: transform 0.2s;}
@@ -494,6 +502,18 @@
       <div class="proj-type">Full Stack · Web</div>
       <div class="proj-title">Nexora</div>
       <div class="proj-desc">Complete e-commerce platform with product listing, cart, order management and an AI-powered customer chatbot for live product enquiries.</div>
+      <div class="proj-gallery">
+        <div class="proj-shot">
+          <!-- Replace src below with your input/code screenshot -->
+          <img src="images/nexora-input.png" alt="Nexora code/input" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>📥<br>Add input screenshot<br><small>images/nexora-input.png</small></div>'">
+          <span class="proj-shot-label">Input</span>
+        </div>
+        <div class="proj-shot">
+          <!-- Replace src below with your output/result screenshot -->
+          <img src="images/nexora-output.png" alt="Nexora output" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>📤<br>Add output screenshot<br><small>images/nexora-output.png</small></div>'">
+          <span class="proj-shot-label">Output</span>
+        </div>
+      </div>
       <div class="proj-tags">
         <span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span><span class="proj-tag">PHP</span><span class="proj-tag">MySQL</span><span class="proj-tag">XAMPP</span><span class="proj-tag">AI Chatbot</span>
       </div>
@@ -506,6 +526,16 @@
       <div class="proj-type">Machine Learning · Deep Learning</div>
       <div class="proj-title">Speech Emotion Recognition</div>
       <div class="proj-desc">End-to-end audio classification pipeline MFCC feature extraction, neural network training and evaluation across 8 emotion labels. Industry mentored.</div>
+      <div class="proj-gallery">
+        <div class="proj-shot">
+          <img src="uploads/Screenshot 2026-06-27 204738.png" alt="SER code/input" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>📥<br>Add input screenshot<br><small>images/ser-input.png</small></div>'">
+          <span class="proj-shot-label">Input</span>
+        </div>
+        <div class="proj-shot">
+          <img src="uploads/Screenshot 2026-06-27 204831.png" alt="SER output" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>📤<br>Add output screenshot<br><small>images/ser-output.png</small></div>'">
+          <span class="proj-shot-label">Output</span>
+        </div>
+      </div>
       <div class="proj-tags">
         <span class="proj-tag">Python</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">TensorFlow</span><span class="proj-tag">Keras</span><span class="proj-tag">Pandas</span><span class="proj-tag">NumPy</span>
       </div>
@@ -518,6 +548,16 @@
       <div class="proj-type">UI/UX Design · Figma</div>
       <div class="proj-title">E-Commerce UI Design <span class="wip-badge">In Progress</span></div>
       <div class="proj-desc">13 screens designed from scratch homepage, product listing, cart, checkout, wishlist, login, sign up, account and more. With clickable prototype flows.</div>
+      <div class="proj-gallery">
+        <div class="proj-shot">
+          <img src="images/ecommerce-figma-1.png" alt="E-commerce Figma design screen 1" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>🎨<br>Add Figma screenshot<br><small>images/ecommerce-figma-1.png</small></div>'">
+          <span class="proj-shot-label">Design</span>
+        </div>
+        <div class="proj-shot">
+          <img src="images/ecommerce-figma-2.png" alt="E-commerce Figma design screen 2" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>🎨<br>Add Figma screenshot<br><small>images/ecommerce-figma-2.png</small></div>'">
+          <span class="proj-shot-label">Design</span>
+        </div>
+      </div>
       <div class="proj-tags">
         <span class="proj-tag">Figma</span><span class="proj-tag">UI Design</span><span class="proj-tag">Prototyping</span><span class="proj-tag">13 Screens</span>
       </div>
@@ -530,6 +570,16 @@
       <div class="proj-type">Mobile UI Design · Figma</div>
       <div class="proj-title">ChatMind <span class="wip-badge">In Progress</span></div>
       <div class="proj-desc">Mobile messenger app UI login screen and chat conversation screen. Focused on text hierarchy, input areas and message bubble layout.</div>
+      <div class="proj-gallery">
+        <div class="proj-shot">
+          <img src="images/chatmind-figma-1.png" alt="ChatMind Figma design screen 1" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>🎨<br>Add Figma screenshot<br><small>images/chatmind-figma-1.png</small></div>'">
+          <span class="proj-shot-label">Design</span>
+        </div>
+        <div class="proj-shot">
+          <img src="images/chatmind-figma-2.png" alt="ChatMind Figma design screen 2" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>🎨<br>Add Figma screenshot<br><small>images/chatmind-figma-2.png</small></div>'">
+          <span class="proj-shot-label">Design</span>
+        </div>
+      </div>
       <div class="proj-tags">
         <span class="proj-tag">Figma</span><span class="proj-tag">Mobile UI</span><span class="proj-tag">Prototyping</span>
       </div>
@@ -542,6 +592,16 @@
       <div class="proj-type">Java · College Lab</div>
       <div class="proj-title">Java Programming</div>
       <div class="proj-desc">Hands-on Java programs from college lab sessions OOP, inheritance, encapsulation, exception handling and file I/O. Verified through HackerRank.</div>
+      <div class="proj-gallery">
+        <div class="proj-shot">
+          <img src="images/java-input.png" alt="Java code/input" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>📥<br>Add code screenshot<br><small>images/java-input.png</small></div>'">
+          <span class="proj-shot-label">Input</span>
+        </div>
+        <div class="proj-shot">
+          <img src="images/java-output.png" alt="Java output" onerror="this.parentElement.innerHTML='<div class=&quot;proj-shot-placeholder&quot;>📤<br>Add output screenshot<br><small>images/java-output.png</small></div>'">
+          <span class="proj-shot-label">Output</span>
+        </div>
+      </div>
       <div class="proj-tags">
         <span class="proj-tag">Java</span><span class="proj-tag">OOP</span><span class="proj-tag">Exception Handling</span><span class="proj-tag">File I/O</span><span class="proj-tag">VS Code</span>
       </div>
